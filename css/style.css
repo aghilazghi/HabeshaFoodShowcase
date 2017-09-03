@@ -1,5 +1,13 @@
 
+/** reusable styles **/
+.box {
+    padding: 1%;
+}
 
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
 
 /********************************/
 /** Header section style **/
@@ -93,4 +101,18 @@ header {
 
 .main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/** Features styles **/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.icon-big {
+    font-size: 290%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
 }

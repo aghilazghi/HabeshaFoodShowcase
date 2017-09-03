@@ -18,12 +18,43 @@ html {
     margin: 0 auto;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
-    text-transform: uppercase;
-    font-weight: 300;
     word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 80px 0;
 }
