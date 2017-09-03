@@ -56,5 +56,5 @@ gulp.task('watch', function() {
     watch(SCRIPTS_PATH, function() {
         gulp.start('scripts')
         browserSync.reload();
-    })
+    });
 });
