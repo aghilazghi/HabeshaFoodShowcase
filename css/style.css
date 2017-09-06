@@ -9,6 +9,17 @@
     line-height: 145%;
 }
 
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /********************************/
 /** Header section style **/
 /********************************/
@@ -115,4 +126,26 @@ header {
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+/** Meals style **/
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
 }
