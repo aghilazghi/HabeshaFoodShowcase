@@ -242,7 +242,10 @@ header {
     margin-top: -5px;
 }
 
-.city-features a:link, .city-features a:visited {
+.city-features a:link, 
+footer a:link, 
+.city-features a:visited,
+footer a:visited {
     color: #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
@@ -250,7 +253,10 @@ header {
     transition: all .3s ease-in-out;
 }
 
-.city-features a:hover, .city-features a:active {
+.city-features a:hover,
+footer a:hover,  
+.city-features a:active,
+footer a:active {
     color: #555555;
     border-bottom: 1px solid transparent;
 }
