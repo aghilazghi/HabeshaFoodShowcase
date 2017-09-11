@@ -12,11 +12,12 @@ sourcemaps = require('gulp-sourcemaps');
 var CSS_DIST_PATH = './dist/css';
 var SCRIPT_DIST_PATH = './dist/js';
 var SCRIPTS_PATH = './js/*.js';
-var CSS_PATH = './css/*.css';
+var CSS_STYLE_PATH = './css/style.css';
+var CSS_RESET_PATH = './css/reset.css';
 
 
 gulp.task('styles', function() {
-    return gulp.src(['./css/reset.css', CSS_PATH])
+    return gulp.src([CSS_RESET_PATH, CSS_STYLE_PATH])
         .pipe(plumber(function (err) {
             console.log('Styles Task Error');
             console.log(err);
@@ -54,7 +55,7 @@ gulp.task('watch', function() {
     });
 
     watch(SCRIPTS_PATH, function() {
-        gulp.start('scripts')
+        gulp.start('scripts');
         browserSync.reload();
     });
 });
