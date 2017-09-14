@@ -12,12 +12,12 @@ sourcemaps = require('gulp-sourcemaps');
 var CSS_DIST_PATH = './dist/css';
 var SCRIPT_DIST_PATH = './dist/js';
 var SCRIPTS_PATH = './js/*.js';
-var CSS_STYLE_PATH = './css/style.css';
+var CSS_PATH = './css/*.css';
 var CSS_RESET_PATH = './css/reset.css';
 
 
 gulp.task('styles', function() {
-    return gulp.src([CSS_RESET_PATH, CSS_STYLE_PATH])
+    return gulp.src([CSS_RESET_PATH, CSS_PATH])
         .pipe(plumber(function (err) {
             console.log('Styles Task Error');
             console.log(err);
