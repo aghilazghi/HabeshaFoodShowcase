@@ -123,6 +123,35 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/** Stick nav style **/
+.sticky {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+    transition: all .3s ease-in-out;
+}
+
+.sticky .main-nav li a:link, .sticky .main-nav li a:visited {
+    color: #555;
+    padding: 15px 0;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+.sticky .main-nav {
+    margin-top: 45px;
+}
 /** Features styles **/
 .long-copy {
     line-height: 145%;
