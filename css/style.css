@@ -88,20 +88,24 @@ header {
     width: auto;
     float: left;
     margin-top: 20px;
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-in-out;
 }
 
 .logo-black {
-    display: none;
-    height: 100px;
+    height: 1px;
     width: auto;
     float: left;
-    margin: 8px 0;
+    margin: 5px 0;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .main-nav {
     float: right;
     list-style: none;
-    margin-top:50px;
+    margin-top: 60px;
 }
 
 .main-nav li {
@@ -132,31 +136,32 @@ header {
     background-color: rgba(255, 255, 255, .98);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .sticky .main-nav li a:link, .sticky .main-nav li a:visited {
     color: #555;
-    padding: 15px 0;
+    transition: all .7s ease-in-out;
 }
 
 .sticky .logo {
-    display: none;
+    height: 1px;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .sticky .logo-black {
-    display: block;
-    transition: all .2s ease-in-out;
+    height: 120px;
+    visibility: visible;
+    opacity: 1;
+    transition: all .7s ease-in-out;
 }
 
-.sticky .main-nav {
-    margin-top: 45px;
-}
 /** Features styles **/
 .long-copy {
     line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 21%;
 }
 
 .icon-big {

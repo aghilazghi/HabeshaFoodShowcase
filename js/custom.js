@@ -8,7 +8,7 @@ $(document).ready(function() {
             $('nav').removeClass('sticky');
         }
     },{
-        offset: '85%'
+        offset: '90%'
     });
 
     /* Scroll to sections */
@@ -43,7 +43,7 @@ $(document).ready(function() {
             if (target.length) {
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
-            $('html, body').animate({ scrollTop: target.offset().top - 100}, 1000, function() {
+            $('html, body').animate({ scrollTop: target.offset().top - 130}, 1000, function() {
                 // Callback after animation
                 // Must change focus!
                 var $target = $(target);
@@ -59,4 +59,6 @@ $(document).ready(function() {
         }
     });
    
+    /* Animate */
+    new WOW().init();
 });

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Habesha Food Showcase  | Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:200,300,300i,400,700">
     <link rel="stylesheet" href="dist/vendors/css/normalize.css">
     <link rel="stylesheet" href="dist/vendors/css/grid.css">
     <link rel="stylesheet" href="dist/vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/vendors/css/animate.css">
     <link rel="stylesheet" href="dist/css/styles.css">
     <link rel="stylesheet" href="dist/css/queries.css">
 </head>
@@ -20,7 +21,7 @@
                 <img src="dist/images/logo.png" alt="Habesha Food logo" class="logo">            
                 <a href="#home"><img src="dist/images/logo-black.png" alt="Habesha Food logo" class="logo-black"></a>
                 <ul class="main-nav">
-                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li><a href="#works">How it works</a></li>
                     <li><a href="#cities">Our cities</a></li>
                     <li><a href="#plans">Sign up</a></li>
@@ -28,7 +29,7 @@
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Goodbye junk food. Hello healthy food.</h1>
+            <h1>Indulge in habesha food. with its rich, spicy stews and diversity of flavors.</h1>
             <a class="btn btn-full js-scroll-to-pricing" href="#"> I'm Interested </a>
             <a class="btn btn-ghost js-scroll-to-features" href="#"> Learn more </a>
         </div>
@@ -37,44 +38,40 @@
     
     <!-- FEATURES -->
     <section class="section-features js-section-features" id="features">
-        <div class="row">
-            <h2>Get food fast &mdash;  not fast food</h2>
+        <div class="row wow fadeInDown" data-wow-offset="200">
+            <h2>Habesha food &mdash; rich and spicy</h2>
             <p class="long-copy">
-                Hello, we’re Habesha Food, your new premium food delivery service. We know you’re always busy.
-                No time for cooking. So let us take care of that, we’re really good at it, we promise!
+                <em>Habesha</em> food is recognized by many reviewers as rich and spicy with variety of flavors. 
+                It shares some features with Asia and the Mediterranean foods. The basic of <em>Habesha</em> food are:
             </p>
         </div>
-        <div class="row">
+        <div class="row wow fadeInUp" data-wow-offset="200" data-wow-delay="350ms">
             <div class="col span-1-of-4 box">
-                <i class="ion-ios-infinite-outline icon-big"></i>
-                <h3>Up to 365 days/year</h3>
+                <i class="ion-ios-navigate-outline icon-big"></i>
+                <h3>Injera</h3>
                 <p>
-                   Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. 
-                   You can also choose to order more flexibly if that's your style.
-                </p>
-            </div>
-            <div class="col span-1-of-4 box">
-                <i class="ion-ios-stopwatch-outline icon-big"></i>
-                <h3>Ready in 20 minutes</h3>
-                <p>
-                    You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. 
-                    We work with the best chefs in each town to ensure that you're 100% happy.
+                    <em>Injera</em> is a must for every <em>Habesha</em> meal. It is a pancake-like flatbread made mostly from fermented taff/tef.
                 </p>
             </div>
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-nutrition-outline icon-big"></i>
-                <h3>100% organic</h3>
+                <h3>Berbere</h3>
                 <p>
-                    All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. 
-                    Good for your health, the environment, and it also tastes better!
+                    Probably, <em>berebere</em> is what makes Habesha food is unique. It is a mix of more than 20 spices and ingredients with powdered chili peppers.
                 </p>
             </div>
             <div class="col span-1-of-4 box">
-                <i class="ion-ios-cart-outline icon-big"></i>
-                <h3>Order anything</h3>
+                <i class="ion-ios-flame-outline icon-big"></i>
+                <h3>Mitmita</h3>
                 <p>
-                    We don't limit your creativity, which means you can order whatever you feel like. 
-                    You can also choose from our menu containing over 100 delicious meals. It's up to you!
+                    In short, it is hotter than berbere. It is used to spice up one's plate.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-flask-outline icon-big"></i>
+                <h3>Tesmi/Kibbeh</h3>
+                <p>
+                    It is a clarified butter which is mixed with many ingredients and spices.
                 </p>
             </div>
         </div>
@@ -442,6 +439,7 @@
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="dist/vendors/js/jquery.waypoints.min.js"></script>
+    <script src="dist/vendors/js/wow.min.js"></script>
     <script src="dist/js/custom.js"></script>
 </body>
 </html>
